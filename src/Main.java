@@ -55,11 +55,7 @@ public class Main {
     
     System.out.println("Tribonacci:");
     Xbonacci xbonacci = new Xbonacci();
-    System.out.println(Arrays.stream(
-      xbonacci.tribonacci(new double[]{1,1,1},10))
-        .mapToObj(value -> String.valueOf(value))
-        .reduce("", (x, y) -> x + y + ", ")
-    );
+    System.out.println(Arrays.toString(xbonacci.tribonacci(new double[]{1,1,1},10)));
     
 
     System.out.println("Exes on Ohs:");
