@@ -2,6 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import codeWars.BinaryArrayToNumber;
+import codeWars.FindOdd;
 import codeWars.Metro;
 import codeWars.RemoveStringSpaces;
 import codeWars.WhoLikesIt;
@@ -11,10 +12,13 @@ public class Main {
 
 	public static void main(String[] args) {
 	  
+	  System.out.println("Who likes it?");
 		System.out.println(WhoLikesIt.whoLikesIt(args));
-		
+
+		System.out.println("Yes or no:");
 		System.out.println(String.format("%s or %s", YesOrNo.boolToWord(true), YesOrNo.boolToWord(false)));
 		
+		System.out.println("Metro:");
 		List<int[]> busStopList = new ArrayList<int[]>();
 		busStopList.add(new int[] {10, 0});
 		busStopList.add(new int[] {5, 3});
@@ -24,6 +28,7 @@ public class Main {
       Metro.countPassengers(busStopList)
     ));
     
+    System.out.println("Bindary to number:");
     List<Integer> binaryList = new ArrayList<Integer>();
     binaryList.add(1);
     binaryList.add(0);
@@ -33,7 +38,12 @@ public class Main {
       "1011 in binary is %s",
       BinaryArrayToNumber.ConvertBinaryArrayToInt(binaryList)
     ));
+    
+    System.out.println("Remove spaces:");
     System.out.println(RemoveStringSpaces.noSpace("It should  have no     spaces!"));
+    
+    System.out.println("Find the odd one:");
+    System.out.println(FindOdd.findIt(new int[]{1,1,2,-2,5,2,4,4,-1,-2,5}));
 	}
 
 }
