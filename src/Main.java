@@ -6,6 +6,7 @@ import codeWars.BinaryArrayToNumber;
 import codeWars.FindOdd;
 import codeWars.Haystack;
 import codeWars.Metro;
+import codeWars.MultiplesOf3Or5;
 import codeWars.RemoveStringSpaces;
 import codeWars.TenMinWalk;
 import codeWars.WhoLikesIt;
@@ -67,6 +68,10 @@ public class Main {
 	
     System.out.println("A ten minute walk:");
     System.out.println(TenMinWalk.isValid(new char[]{'n', 'n', 'e', 'e', 'e', 's', 's', 'w', 'w', 'w'}));
+
+    System.out.println("Multiples of 3 or 5:");
+    MultiplesOf3Or5 multiples = new MultiplesOf3Or5();
+    System.out.println(multiples.solution(10));
 	}
 
 }
