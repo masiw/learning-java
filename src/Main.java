@@ -3,6 +3,7 @@ import java.util.List;
 
 import codeWars.BinaryArrayToNumber;
 import codeWars.Metro;
+import codeWars.RemoveStringSpaces;
 import codeWars.WhoLikesIt;
 import codeWars.YesOrNo;
 
@@ -32,7 +33,7 @@ public class Main {
       "1011 in binary is %s",
       BinaryArrayToNumber.ConvertBinaryArrayToInt(binaryList)
     ));
-    
+    System.out.println(RemoveStringSpaces.noSpace("It should  have no     spaces!"));
 	}
 
 }
