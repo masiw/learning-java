@@ -10,6 +10,7 @@ import codeWars.Metro;
 import codeWars.MultiplesOf3Or5;
 import codeWars.RemoveStringSpaces;
 import codeWars.TenMinWalk;
+import codeWars.TwoSum;
 import codeWars.WhoLikesIt;
 import codeWars.XO;
 import codeWars.Xbonacci;
@@ -76,6 +77,9 @@ public class Main {
 
     System.out.println("Bit counting:");
     System.out.println(BitCounting.countBits(1234));
+    
+    System.out.println("Two sum:");
+    System.out.println(Arrays.toString(TwoSum.solution(new int[] {1,2,3}, 4)));
 	}
 
 }
