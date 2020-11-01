@@ -3,6 +3,7 @@ import java.util.Arrays;
 import java.util.List;
 
 import codeWars.BinaryArrayToNumber;
+import codeWars.BitCounting;
 import codeWars.FindOdd;
 import codeWars.Haystack;
 import codeWars.Metro;
@@ -72,6 +73,9 @@ public class Main {
     System.out.println("Multiples of 3 or 5:");
     MultiplesOf3Or5 multiples = new MultiplesOf3Or5();
     System.out.println(multiples.solution(10));
+
+    System.out.println("Bit counting:");
+    System.out.println(BitCounting.countBits(1234));
 	}
 
 }
