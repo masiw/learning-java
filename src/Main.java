@@ -7,6 +7,7 @@ import codeWars.FindOdd;
 import codeWars.Metro;
 import codeWars.RemoveStringSpaces;
 import codeWars.WhoLikesIt;
+import codeWars.XO;
 import codeWars.Xbonacci;
 import codeWars.YesOrNo;
 
@@ -54,6 +55,10 @@ public class Main {
         .mapToObj(value -> String.valueOf(value))
         .reduce("", (x, y) -> x + y + ", ")
     );
+    
+
+    System.out.println("Exes on Ohs:");
+    System.out.println(XO.getXO("xXnoxOo"));
 	}
 
 }
