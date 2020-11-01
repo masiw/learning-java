@@ -4,6 +4,7 @@ import java.util.List;
 
 import codeWars.BinaryArrayToNumber;
 import codeWars.FindOdd;
+import codeWars.Haystack;
 import codeWars.Metro;
 import codeWars.RemoveStringSpaces;
 import codeWars.WhoLikesIt;
@@ -59,6 +60,9 @@ public class Main {
 
     System.out.println("Exes on Ohs:");
     System.out.println(XO.getXO("xXnoxOo"));
+    
+    System.out.println("A Needle in the Haystack:");
+    System.out.println(Haystack.findNeedle(new Object[]{"3", "123124234", null, "needle", "world", "hay", 2, "3", true, false}));
 	}
 
 }
