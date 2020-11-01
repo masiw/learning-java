@@ -7,6 +7,7 @@ import codeWars.FindOdd;
 import codeWars.Haystack;
 import codeWars.Metro;
 import codeWars.RemoveStringSpaces;
+import codeWars.TenMinWalk;
 import codeWars.WhoLikesIt;
 import codeWars.XO;
 import codeWars.Xbonacci;
@@ -63,6 +64,9 @@ public class Main {
     
     System.out.println("A Needle in the Haystack:");
     System.out.println(Haystack.findNeedle(new Object[]{"3", "123124234", null, "needle", "world", "hay", 2, "3", true, false}));
+	
+    System.out.println("A ten minute walk:");
+    System.out.println(TenMinWalk.isValid(new char[]{'n', 'n', 'e', 'e', 'e', 's', 's', 'w', 'w', 'w'}));
 	}
 
 }
