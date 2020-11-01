@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import codeWars.BinaryArrayToNumber;
@@ -6,6 +7,7 @@ import codeWars.FindOdd;
 import codeWars.Metro;
 import codeWars.RemoveStringSpaces;
 import codeWars.WhoLikesIt;
+import codeWars.Xbonacci;
 import codeWars.YesOrNo;
 
 public class Main {
@@ -44,6 +46,14 @@ public class Main {
     
     System.out.println("Find the odd one:");
     System.out.println(FindOdd.findIt(new int[]{1,1,2,-2,5,2,4,4,-1,-2,5}));
+    
+    System.out.println("Tribonacci:");
+    Xbonacci xbonacci = new Xbonacci();
+    System.out.println(Arrays.stream(
+      xbonacci.tribonacci(new double[]{1,1,1},10))
+        .mapToObj(value -> String.valueOf(value))
+        .reduce("", (x, y) -> x + y + ", ")
+    );
 	}
 
 }
